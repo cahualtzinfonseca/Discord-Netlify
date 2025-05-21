@@ -43,6 +43,17 @@ function handle(command: any) {
 			});
 		}
 
+		case HELP_COMMAND.name: {
+			console.log("Help request");
+			return Response.json({
+				type: InteractionResponseType.ChannelMessageWithSource,
+				data: {
+					content: "Hello, Thank You for reaching the Support. Unfortunately, it is still unavailable at the moment.",
+					flags: MessageFlags.Ephemeral,
+				},
+			});
+		}
+			
 		case INVITE_COMMAND.name: {
 			console.log("Invite request");
 			return Response.json({
@@ -60,7 +71,7 @@ function handle(command: any) {
 				type: InteractionResponseType.ChannelMessageWithSource,
 				data: {
 					content:
-						"Thanks for using my bot! Let me know what you think on twitter (@IanMitchel1). If you'd like to contribute to hosting costs, you can donate at https://github.com/sponsors/ianmitchell",
+						"Hello, Thank You for reaching the Support. Unfortunately, it is still unavailable at the moment.",
 					flags: MessageFlags.Ephemeral,
 				},
 			});
@@ -73,7 +84,6 @@ function handle(command: any) {
 	}
 }
 
-// Gotta see someone 'bout a trout
 export async function POST(request: Request) {
 	if (!process.env.PUBLIC_KEY) {
 		throw new Error("No public key found");
