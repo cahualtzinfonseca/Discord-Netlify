@@ -42,10 +42,25 @@ export const SLAP_COMMAND_CONTEXT_MENU = {
 	],
 };
 
+export const HELP_COMMAND = {
+	name: "help",
+	type: ApplicationCommandType.ChatInput,
+	description: "Get a list of commands available.",
+	contexts: [
+		InteractionContextType.Guild,
+		InteractionContextType.BotDM,
+		InteractionContextType.PrivateChannel,
+	],
+	integration_types: [
+		ApplicationIntegrationType.GuildInstall,
+		ApplicationIntegrationType.UserInstall,
+	],
+};
+
 export const INVITE_COMMAND = {
 	name: "invite",
 	type: ApplicationCommandType.ChatInput,
-	description: "Get an invite link to add the bot",
+	description: "Get an invite link to add the bot to your server",
 	contexts: [
 		InteractionContextType.Guild,
 		InteractionContextType.BotDM,
