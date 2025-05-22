@@ -1,7 +1,7 @@
 
 # Discord-Netlify
 
-Discord's HTTP Slash Commands hosted on [Netlify](https://www.netlify.com/). It is a fork from [IanMitchell/discord-trout](https://github.com/IanMitchell/discord-trout). Project is Licensed using MIT License, as the original Repository.
+Discord's HTTP Slash Commands hosted on [Netlify](https://www.netlify.com/). It is a fork from [IanMitchell/discord-trout](https://github.com/IanMitchell/discord-trout). Project is Licensed using MIT License, as the original Repository. This Repository is NOT Affiliated by the original Repository.
 
 ## How to Deploy
 
