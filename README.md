@@ -96,8 +96,12 @@ case INFO_COMMAND.name.toLowerCase():
 ```
 5. After the modifications fits your needs, now head to Netlify. Choose ``Add New Project`` and then ``Import an Existing Project``.
 6. Choose GitHub as the provider. If not yet connected, you can setup as well right there.
-7. After connected, choose the repository that you've been forked. Then Deploy!
-8. Head to your Discord Server, and test some commands!
+7. After connected, choose the repository that you've been forked.
+8. Insert the Environment Variables by Importing your own Bot's ``.env``
+9. Deploy your Project. Wait for it to finish Deploying. Then you'll get the Netlify Domains. E.g. ``generated-domain69420.netlify.app`` 
+10. Head to the Discord Developer Portal AGAIN. Go to your Applications for this Bot.
+11. Head to ``Interactions Endpoint URL`` and fill it with ``https://generated-domain69420.netlify.app/api/interactions``. Then Save.
+12. Finally, Head to your Discord Server, and test some commands!
 ## Slash Commands is Not Registered?
 
 Sometimes, the Slash Commands is not Registered Properly. Here is how to Register the Slash Commands, locally on your PC:
